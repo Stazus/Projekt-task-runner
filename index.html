@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona wizytówkowa z nowoczesnym designem, dostosowana do komputerów i urządzeń mobilnych.">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Moja Strona</a>
+            <button class="menu-toggle" aria-label="Przełącz menu">☰</button>
+            <ul class="menu">
+                <li><a href="#home">Strona Główna</a></li>
+                <li><a href="#about">O Nas</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Witamy na naszej stronie!</h1>
+            <p>Tworzymy niesamowite rzeczy. Sprawdź, co mamy do zaoferowania.</p>
+            <a href="#about" class="btn">Dowiedz się więcej</a>
+        </section>
+        <section id="about" class="about">
+            <h2>O Nas</h2>
+            <p>Jesteśmy zespołem profesjonalistów, którzy specjalizują się w dostarczaniu wyjątkowych rozwiązań dla naszych klientów.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Nasze Usługi</h2>
+            <div class="service-container">
+                <div class="service">
+                    <h3>Projektowanie</h3>
+                    <p>Tworzymy projekty dopasowane do Twoich potrzeb.</p>
+                </div>
+                <div class="service">
+                    <h3>Rozwój</h3>
+                    <p>Wdrażamy najnowsze technologie, aby realizować Twoje pomysły.</p>
+                </div>
+                <div class="service">
+                    <h3>Wsparcie</h3>
+                    <p>Zapewniamy wsparcie techniczne na najwyższym poziomie.</p>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Moja Strona. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script>
+        // Obsługa menu na urządzeniach mobilnych
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
